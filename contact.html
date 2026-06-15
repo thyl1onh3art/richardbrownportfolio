@@ -28,7 +28,11 @@
       projects, or professional enquiries.
     </p>
 
-    <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+    <form id="contactForm" action="https://formsubmit.co/ajax/rabrown1993@outlook.com" method="POST">
+
+      <input type="hidden" name="_subject" value="New message from CV website">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -42,6 +46,8 @@
       <button type="submit" class="submit_button">
         Send Message
       </button>
+
+      <p id="formStatus" class="form_status" aria-live="polite"></p>
 
     </form>
 
